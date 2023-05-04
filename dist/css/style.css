@@ -7160,14 +7160,6 @@ header .osf-header .main-nav .main-ul li:nth-child(1) .mega-menu {
   transform-origin: top;
 }
 
-header .osf-header .main-nav .main-ul li:nth-child(1) .mega-menu.zxc {
-  opacity: 1;
-  position: relative;
-  visibility: visible;
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-}
-
 header .osf-header .main-nav .main-ul li:nth-child(1) .mega-menu .wrap {
   margin: 0 auto;
   width: calc(100% - 30px);
@@ -7324,6 +7316,15 @@ header .osf-header .main-nav .main-ul li:nth-child(1):hover a:after {
   -webkit-transform: translate(0px, -50%) rotateX(180deg);
   transform: translate(0px, -50%) rotateX(180deg);
   transition: 0.3s ease-in-out;
+}
+
+header .osf-header .main-nav .main-ul li .navs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 header .osf-header .hamburger {
@@ -11687,10 +11688,6 @@ header .osf-header .icons {
 
   header .osf-header .main-nav .main-ul li a {
     color: #45413e;
-  }
-
-  header .osf-header .main-nav .main-ul li:nth-child(1) .mega-menu.zxc {
-    position: absolute;
   }
 
   header .osf-header .main-nav .main-ul li:nth-child(1) .mega-menu {
