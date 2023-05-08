@@ -1,0 +1,86 @@
+.osf-hero {
+  background: #fff;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    @media (min-width: $lg) {
+      max-width: 1170px;
+      flex-direction: row;
+    }
+    .items {
+      width: 100%;
+      @media (min-width: $lg) {
+        width: 60%;
+      }
+      @media (min-width: $xl) {
+        max-width: 870px;
+      }
+      p,
+      a {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            height: 500px;
+            border-radius: 8px;
+            .inside {
+              h1 {
+                color: #fff;
+                font-family: "Myriad Pro", sans-serif;
+                font-weight: 800;
+                font-size: 28px;
+                width: 70%;
+                margin: 0;
+                animation: fadeInLeft 0.5s ease forwards;
+                @media (min-width: $lg) {
+                  font-size: 48px;
+                }
+              }
+              p {
+                font-size: 14px;
+                color: #fff;
+                font-weight: 400;
+                width: 41%;
+                padding: 93px 0 46px 0;
+              }
+              a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 14px;
+                color: #fff;
+                font-weight: 400;
+                padding: 6px 34px;
+                border-radius: 19px;
+                border: 2px solid #fff;
+                background-color: rgba(30, 29, 34, 0);
+              }
+              &:nth-child(1) {
+                padding: 78px 0 0 78px;
+              }
+            }
+          }
+        }
+      }
+      .swiper-pagination {
+        span {
+          background: red;
+          &.swiper-pagination-bullet-active {
+            background: #fff;
+          }
+        }
+      }
+      &:nth-child(2) {
+        width: 270px;
+        // padding: 0 0 0 30px;
+        .image {
+          border: 1px solid red;
+        }
+      }
+    }
+  }
+}

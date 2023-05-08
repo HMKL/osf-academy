@@ -29,7 +29,22 @@ let layoutHandler;
 
 
 
-
+        var swiper = new Swiper('.swiper', {
+            // spaceBetween: 30,
+            effect: 'coverflow',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
 
 
@@ -45,6 +60,7 @@ let layoutHandler;
 
 
   const getHamburger = document.querySelector('.hamburger');
+  const getHamburgerSpan = document.querySelector('.hamburger > span');
   const getNav = document.querySelector('.main-nav');
   const getMega = document.querySelector('.mega-menu');
   const getUl = document.querySelectorAll('.main-ul > li');
@@ -55,10 +71,13 @@ let layoutHandler;
 
 
 
-
-  getHamburger.addEventListener('click', () => {
-    getNav.classList.toggle('show');
-  })
+  const addLines = () => {
+    getHamburger.addEventListener('click', () => {
+      getNav.classList.toggle('show');
+      getHamburgerSpan.classList.toggle('lines');
+    });
+  }
+  addLines();
 
 
   const get = () => {
@@ -85,6 +104,9 @@ let layoutHandler;
 
   }
   get();
+
+
+
 
 
 

@@ -5,6 +5,7 @@
 
 
   const getHamburger = document.querySelector('.hamburger');
+  const getHamburgerSpan = document.querySelector('.hamburger > span');
   const getNav = document.querySelector('.main-nav');
   const getMega = document.querySelector('.mega-menu');
   const getUl = document.querySelectorAll('.main-ul > li');
@@ -15,10 +16,13 @@
 
 
 
-
-  getHamburger.addEventListener('click', () => {
-    getNav.classList.toggle('show');
-  })
+  const addLines = () => {
+    getHamburger.addEventListener('click', () => {
+      getNav.classList.toggle('show');
+      getHamburgerSpan.classList.toggle('lines');
+    });
+  }
+  addLines();
 
 
   const get = () => {
@@ -45,6 +49,9 @@
 
   }
   get();
+
+
+
 
 
 

@@ -29,7 +29,22 @@ let layoutHandler;
 
 
 
-
+        var swiper = new Swiper('.swiper', {
+            // spaceBetween: 30,
+            effect: 'coverflow',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
 
 

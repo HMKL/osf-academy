@@ -7357,12 +7357,8 @@ header .osf-header .hamburger span:before {
   top: 14px;
 }
 
-header .osf-header .hamburger:hover span:after {
-  width: 100%;
-  transition: 0.3s ease-in-out;
-}
-
-header .osf-header .hamburger:hover span:before {
+header .osf-header .hamburger span.lines:after,
+header .osf-header .hamburger span.lines:before {
   width: 100%;
   transition: 0.3s ease-in-out;
 }
@@ -7416,6 +7412,91 @@ header .osf-header .icons {
   -ms-flex-pack: justify;
   justify-content: space-between;
   display: none;
+}
+
+.osf-hero {
+  background: #fff;
+}
+
+.osf-hero .inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: calc(100% - 30px);
+}
+
+.osf-hero .inner .items {
+  width: 100%;
+}
+
+.osf-hero .inner .items p,
+.osf-hero .inner .items a {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide {
+  height: 500px;
+  border-radius: 8px;
+}
+
+.osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside h1,
+.osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside .h1 {
+  color: #fff;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  width: 70%;
+  margin: 0;
+  -webkit-animation: fadeInLeft 0.5s ease forwards;
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+.osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  width: 41%;
+  padding: 93px 0 46px 0;
+}
+
+.osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  padding: 6px 34px;
+  border-radius: 19px;
+  border: 2px solid #fff;
+  background-color: rgba(30, 29, 34, 0);
+}
+
+.osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside:nth-child(1) {
+  padding: 78px 0 0 78px;
+}
+
+.osf-hero .inner .items .swiper-pagination span {
+  background: red;
+}
+
+.osf-hero .inner .items .swiper-pagination span.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.osf-hero .inner .items:nth-child(2) {
+  width: 270px;
+}
+
+.osf-hero .inner .items:nth-child(2) .image {
+  border: 1px solid red;
 }
 
 @media (min-width: 576px) {
@@ -11749,6 +11830,22 @@ header .osf-header .icons {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .osf-hero .inner {
+    max-width: 1170px;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .osf-hero .inner .items {
+    width: 60%;
+  }
+
+  .osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside h1,
+  .osf-hero .inner .items .swiper .swiper-wrapper .swiper-slide .inside .h1 {
+    font-size: 48px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -13292,6 +13389,10 @@ header .osf-header .icons {
 
   header .osf-header .main-nav {
     padding: 0 0 0 147px;
+  }
+
+  .osf-hero .inner .items {
+    max-width: 870px;
   }
 }
 
