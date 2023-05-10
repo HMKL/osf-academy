@@ -6,79 +6,130 @@
     justify-content: space-between;
     margin: 0 auto;
     width: calc(100% - 30px);
-    @media (min-width: $lg) {
+    @media (min-width: $md) {
       max-width: 1170px;
       flex-direction: row;
     }
+    p,
+    a {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
     .items {
-      width: 100%;
-      @media (min-width: $lg) {
-        width: 60%;
-      }
-      @media (min-width: $xl) {
-        max-width: 870px;
-      }
-      p,
-      a {
-        margin: 0;
-        font-family: "Lato", sans-serif;
-      }
-      .swiper {
-        .swiper-wrapper {
-          .swiper-slide {
-            height: 500px;
-            border-radius: 8px;
-            .inside {
-              h1 {
-                color: #fff;
-                font-family: "Myriad Pro", sans-serif;
-                font-weight: 800;
-                font-size: 28px;
-                width: 70%;
-                margin: 0;
-                animation: fadeInLeft 0.5s ease forwards;
-                @media (min-width: $lg) {
-                  font-size: 48px;
+      &:nth-child(1) {
+        width: 100%;
+        @media (min-width: $md) {
+          width: 60%;
+        }
+        @media (min-width: $lg) {
+          width: 70%;
+        }
+        @media (min-width: $xl) {
+          max-width: 870px;
+          width: auto;
+        }
+        .swiper {
+          .swiper-wrapper {
+            .swiper-slide {
+              border-radius: 8px;
+              height: 500px;
+              .inside {
+                padding: 78px 59px 0 59px;
+                h1 {
+                  color: #fff;
+                  font-family: "Myriad Pro", sans-serif;
+                  font-weight: 800;
+                  font-size: 28px;
+                  width: 85%;
+                  margin: 0;
+                  animation: fadeInLeft 0.5s ease forwards;
+                  @media (min-width: $lg) {
+                    font-size: 48px;
+                  }
+                }
+                p {
+                  font-size: 14px;
+                  color: #fff;
+                  font-weight: 400;
+                  width: 48%;
+                  padding: 93px 0 46px 0;
+                }
+                a {
+                  display: inline-block;
+                  text-decoration: none;
+                  font-size: 14px;
+                  color: #fff;
+                  font-weight: 400;
+                  padding: 6px 34px;
+                  border-radius: 19px;
+                  border: 2px solid #fff;
+                  background-color: rgba(30, 29, 34, 0);
                 }
               }
-              p {
-                font-size: 14px;
-                color: #fff;
-                font-weight: 400;
-                width: 41%;
-                padding: 93px 0 46px 0;
+              &.one {
+                text-align: center;
+                .inside {
+                  h1 {
+                    margin: 0 auto;
+                  }
+                  p {
+                    width: 50%;
+                    margin: 0 auto;
+                  }
+                }
               }
-              a {
-                display: inline-block;
-                text-decoration: none;
-                font-size: 14px;
-                color: #fff;
-                font-weight: 400;
-                padding: 6px 34px;
-                border-radius: 19px;
-                border: 2px solid #fff;
-                background-color: rgba(30, 29, 34, 0);
-              }
-              &:nth-child(1) {
-                padding: 78px 0 0 78px;
+              &.two {
+                text-align: end;
+                .inside {
+                  h1 {
+                    margin: 0 0 0 auto;
+                  }
+                  p {
+                    margin: 0 0 0 auto;
+                  }
+                }
               }
             }
           }
         }
-      }
-      .swiper-pagination {
-        span {
-          background: red;
-          &.swiper-pagination-bullet-active {
-            background: #fff;
+        .swiper-pagination {
+          span {
+            background: red;
+            &.swiper-pagination-bullet-active {
+              background: #fff;
+            }
           }
         }
       }
+
       &:nth-child(2) {
-        width: 270px;
-        // padding: 0 0 0 30px;
-        .image {
+        display: none;
+        @media (min-width: $md) {
+          width: 35%;
+          display: block;
+        }
+
+        @media (min-width: $xl) {
+          max-width: 270px;
+        }
+        .inside {
           border: 1px solid red;
+          width: 270px;
+          margin: 0 0 0 auto;
+          .image {
+            position: relative;
+            .over {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .text {
+            p {
+              color: red;
+            }
+          }
         }
       }
     }

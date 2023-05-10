@@ -27,21 +27,21 @@
     "jquery": "latest",
     "sass-mediaqueries": "latest"
   },
-  "name": "resume",
-  "description": "A front-end template that helps you build fast, modern mobile web apps.",
+  "name": "osf-academy",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HMKL/portfolio.git"
+    "url": "git+https://github.com/HMKL/osf-academy.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HMKL/portfolio/issues"
+    "url": "https://github.com/HMKL/osf-academy/issues"
   },
-  "homepage": "https://github.com/HMKL/portfolio#readme"
+  "homepage": "https://github.com/HMKL/osf-academy#readme",
+  "description": ""
 }

@@ -31,7 +31,7 @@ let layoutHandler;
 
         var swiper = new Swiper('.swiper', {
             // spaceBetween: 30,
-            effect: 'coverflow',
+            // effect: 'coverflow',
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

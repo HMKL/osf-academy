@@ -43,6 +43,7 @@ header {
         transition: 0.3s ease-in-out;
         width: 100%;
         background: #262a32;
+        z-index: 2;
         @media (min-width: $lg) {
           background: transparent;
         }
