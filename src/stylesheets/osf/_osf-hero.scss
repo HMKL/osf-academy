@@ -6,6 +6,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: calc(100% - 30px);
+    padding: 27px 0 0 0;
     @media (min-width: $md) {
       max-width: 1170px;
       flex-direction: row;
@@ -29,30 +30,47 @@
           width: auto;
         }
         .swiper {
+          border-radius: 8px;
           .swiper-wrapper {
             .swiper-slide {
               border-radius: 8px;
               height: 500px;
               .inside {
-                padding: 78px 59px 0 59px;
+                padding: 78px 10px 0 10px;
+                text-align: center;
+                @media (min-width: $lg) {
+                  padding: 78px 59px 0 59px;
+                  text-align: start;
+                }
                 h1 {
                   color: #fff;
                   font-family: "Myriad Pro", sans-serif;
                   font-weight: 800;
                   font-size: 28px;
-                  width: 85%;
+                  width: 100%;
                   margin: 0;
                   animation: fadeInLeft 0.5s ease forwards;
-                  @media (min-width: $lg) {
+                  @media (min-width: $xl) {
+                    width: 85%;
+                  }
+                  @media (min-width: $xl) {
                     font-size: 48px;
+                    width: 85%;
                   }
                 }
                 p {
                   font-size: 14px;
                   color: #fff;
                   font-weight: 400;
-                  width: 48%;
-                  padding: 93px 0 46px 0;
+                  width: 100%;
+                  padding: 38px 0 120px 0;
+                  @media (min-width: $md) {
+                    width: 98%;
+                  }
+                  @media (min-width: $lg) {
+                    width: 48%;
+                    padding: 93px 0 46px 0;
+                  }
                 }
                 a {
                   display: inline-block;
@@ -67,25 +85,42 @@
                 }
               }
               &.one {
-                text-align: center;
                 .inside {
+                  text-align: center;
+                  @media (min-width: $lg) {
+                    text-align: center;
+                  }
                   h1 {
                     margin: 0 auto;
                   }
                   p {
-                    width: 50%;
                     margin: 0 auto;
+                    @media (min-width: $md) {
+                      width: 98%;
+                    }
+                    @media (min-width: $lg) {
+                      width: 48%;
+                    }
                   }
                 }
               }
               &.two {
-                text-align: end;
                 .inside {
+                  text-align: center;
+                  @media (min-width: $lg) {
+                    text-align: end;
+                  }
                   h1 {
                     margin: 0 0 0 auto;
                   }
                   p {
                     margin: 0 0 0 auto;
+                    @media (min-width: $md) {
+                      width: 98%;
+                    }
+                    @media (min-width: $lg) {
+                      width: 48%;
+                    }
                   }
                 }
               }
@@ -105,29 +140,69 @@
       &:nth-child(2) {
         display: none;
         @media (min-width: $md) {
-          width: 35%;
+          width: 270px;
           display: block;
         }
 
-        @media (min-width: $xl) {
-          max-width: 270px;
-        }
         .inside {
-          border: 1px solid red;
-          width: 270px;
-          margin: 0 0 0 auto;
+          // border: 1px solid red;
+          // margin: 0 0 0 auto;
           .image {
             position: relative;
             .over {
+              text-align: center;
               position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
+              top: 0;
+              height: 100%;
+              width: 100%;
+              p {
+                font-size: 100px;
+                color: #fff;
+                font-weight: 800;
+                line-height: 1.2;
+                padding: 45px 0 0 0;
+                &:nth-child(2) {
+                  font-size: 24px;
+                  line-height: 1.25;
+                  font-weight: 400;
+                  text-transform: uppercase;
+                  width: 60%;
+                  margin: 0 auto;
+                }
+              }
             }
           }
           .text {
+            text-align: center;
             p {
-              color: red;
+              font-size: 18px;
+              line-height: 18px;
+              color: #45413e;
+              font-weight: 400;
+              padding: 40px 0 10px 0;
+              &:nth-child(2) {
+                font-size: 13px;
+                width: 73%;
+                margin: 0 auto;
+                padding: 0 0 26px 0;
+              }
+            }
+            a {
+              display: inline-block;
+              text-decoration: none;
+              padding: 5px 29px;
+              border-radius: 19px;
+              background-color: rgba(30, 29, 34, 0);
+              border: 2px solid #3a5b96;
+              font-size: 14px;
+              text-transform: uppercase;
+              color: #3a5b96;
+              font-weight: 400;
+              i {
+                width: 8px;
+                height: 17px;
+                padding: 0 25px 0 0;
+              }
             }
           }
         }

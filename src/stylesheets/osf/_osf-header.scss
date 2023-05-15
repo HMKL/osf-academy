@@ -1,5 +1,14 @@
 header {
   position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #e8e2d6;
+    opacity: 0.5;
+    // top: 0;
+  }
   .osf-header {
     width: calc(100% - 30px);
     margin: 0 auto;
@@ -231,6 +240,7 @@ header {
               position: relative;
               visibility: visible;
               transform: scaleY(1);
+              z-index: 2;
               @media (min-width: $lg) {
                 position: absolute;
               }
@@ -358,6 +368,17 @@ header {
       display: none;
       @media (min-width: $lg) {
         display: flex;
+      }
+      a {
+        &:nth-child(2) {
+          .modal {
+            .modal-dialog {
+              .inside {
+                background: #fff;
+              }
+            }
+          }
+        }
       }
     }
   }
