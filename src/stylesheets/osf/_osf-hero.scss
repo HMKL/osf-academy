@@ -6,7 +6,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: calc(100% - 30px);
-    padding: 27px 0 0 0;
+    padding: 27px 0 27px 0;
     @media (min-width: $md) {
       max-width: 1170px;
       flex-direction: row;
@@ -145,8 +145,6 @@
         }
 
         .inside {
-          // border: 1px solid red;
-          // margin: 0 0 0 auto;
           .image {
             position: relative;
             .over {
@@ -184,13 +182,13 @@
                 font-size: 13px;
                 width: 73%;
                 margin: 0 auto;
-                padding: 0 0 26px 0;
+                padding: 0 0 24px 0;
               }
             }
             a {
               display: inline-block;
               text-decoration: none;
-              padding: 5px 29px;
+              padding: 6px 29px;
               border-radius: 19px;
               background-color: rgba(30, 29, 34, 0);
               border: 2px solid #3a5b96;

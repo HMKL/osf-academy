@@ -1,0 +1,313 @@
+.osf-products {
+  background: #262a32;
+  p,
+  a,
+  span {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    @media (min-width: $lg) {
+      max-width: 1170px;
+    }
+    .inner-text {
+      padding: 28px 0 18px 0;
+      @media (min-width: $lg) {
+        padding: 80px 0 30px 0;
+      }
+      .text {
+        text-align: center;
+        position: relative;
+
+        p {
+          color: #fff;
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 800;
+          @media (min-width: $lg) {
+            font-size: 24px;
+          }
+        }
+        &:after,
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(0, -50%);
+          height: 2px;
+          width: calc(50% - 83px);
+          background: #fff;
+          opacity: 0.1;
+          @media (min-width: $md) {
+            width: calc(50% - 100px);
+          }
+          @media (min-width: $lg) {
+            width: calc(50% - 126px);
+          }
+        }
+        &:before {
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+    .product-items {
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      display: none;
+      @media (min-width: $md) {
+        flex-direction: row;
+        display: flex;
+        &:after {
+          content: "";
+          display: block;
+          width: calc(50% - 14px);
+        }
+      }
+      .items {
+        width: 100%;
+        position: relative;
+        @media (min-width: $md) {
+          width: calc(33.33% - 10px);
+          margin: 0 0 20px 0;
+        }
+        @media (min-width: $lg) {
+          width: calc(25% - 22px);
+          margin: 0 0 30px 0;
+        }
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 0;
+          top: 0;
+          background: linear-gradient(0deg, #1bc167 0%, #2dd3a1 100%);
+          opacity: 0.9;
+          transition: all 0.3s ease-in-out;
+          border-radius: 6px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          .content {
+            display: flex;
+            justify-content: space-between;
+            @media (min-width: $md) {
+              width: 65%;
+            }
+            @media (min-width: $lg) {
+              width: 75%;
+            }
+            .plus,
+            .heart {
+              border-radius: 45px;
+              background: #fff;
+              position: relative;
+              @media (min-width: $md) {
+                width: 65px;
+                height: 65px;
+              }
+              @media (min-width: $lg) {
+                width: 75px;
+                height: 75px;
+              }
+              @media (min-width: $xl) {
+                width: 90px;
+                height: 90px;
+              }
+              a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  width: 28px;
+                  height: 28px;
+                }
+              }
+              &.heart {
+                img {
+                  width: 32px;
+                  height: 28px;
+                }
+              }
+            }
+          }
+        }
+        &:hover .overlay {
+          height: 100%;
+          transition: all 0.3s ease-in-out;
+        }
+        .img-products {
+          position: relative;
+          img {
+            width: 100%;
+          }
+          &.info {
+            max-height: 100%;
+            position: relative;
+            .static {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              bottom: 0;
+              left: 0;
+              display: flex;
+              align-items: end;
+              background-image: linear-gradient(0deg, #675b99 0%, #dc5886 100%);
+              opacity: 0.8;
+              border-radius: 6px;
+              .static-text {
+                padding: 0 0 40px 30px;
+                @media (min-width: $md) {
+                  width: 80%;
+                }
+                @media (min-width: $xl) {
+                  width: 60%;
+                }
+                p {
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #fff;
+                  font-weight: 400;
+                }
+                ul {
+                  margin: 0;
+                  padding: 20px 0 0 0;
+                  list-style: none;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  width: 65%;
+                  li {
+                    span {
+                      font-size: 14px;
+                      text-transform: uppercase;
+                      color: #ffffff;
+                      font-weight: 400;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .about-products {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 85%;
+            height: 29%;
+            margin: auto;
+            padding: 14px 0 0 0;
+            text-align: center;
+            p {
+              font-size: 16px;
+              line-height: 18px;
+              color: #45413e;
+              font-weight: 400;
+              @media (min-width: $md) {
+                padding: 0 0 4px 0;
+              }
+              @media (min-width: $lg) {
+                padding: 0 0 7px 0;
+              }
+              @media (min-width: $xl) {
+                padding: 0 0 20px 0;
+              }
+            }
+            span {
+              font-size: 14px;
+              color: #011847;
+              font-weight: 400;
+              display: block;
+            }
+            &.buy {
+              p {
+                @media (min-width: $lg) {
+                  padding: 0;
+                }
+                @media (min-width: $xl) {
+                  padding: 0 0 10px 0;
+                }
+              }
+              .price {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                margin: 0 auto;
+                border: 2px solid #7f7f7f;
+                border-radius: 19px;
+                position: relative;
+                @media (min-width: $lg) {
+                  width: 100%;
+                }
+                @media (min-width: $xl) {
+                  width: 80%;
+                }
+                &:after {
+                  content: "";
+                  position: absolute;
+                  width: 2px;
+                  height: 100%;
+                  left: 50%;
+                  top: 0;
+                  background: #7f7f7f;
+                }
+                .price-items {
+                  @media (min-width: $lg) {
+                    padding: 2px 0;
+                  }
+                  @media (min-width: $xl) {
+                    padding: 4px 0;
+                  }
+                  a {
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: #000;
+                    font-weight: 400;
+                  }
+                  span {
+                    color: #24c36c;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .load-more {
+      text-align: center;
+      display: none;
+      padding: 23px 0 60px 0;
+      @media (min-width: $md) {
+        display: block;
+      }
+      a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #e8e2d6;
+        border-radius: 19px;
+        padding: 6px 75px;
+        i {
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+}

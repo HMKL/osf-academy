@@ -29,9 +29,9 @@ let layoutHandler;
 
 
 
-        var swiper = new Swiper('.swiper', {
+        let swiperMain = new Swiper('#main-swiper', {
             // spaceBetween: 30,
-            // effect: 'coverflow',
+            effect: 'coverflow',
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -45,6 +45,27 @@ let layoutHandler;
                 prevEl: '.swiper-button-prev',
             },
         });
+
+
+
+        let swiperSecond = new Swiper('#second-swiper', {
+            // spaceBetween: 30,
+            // effect: 'coverflow',
+            paginationClickable: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: '.forward',
+                prevEl: '.backward',
+            },
+        });
+
 
 
 
