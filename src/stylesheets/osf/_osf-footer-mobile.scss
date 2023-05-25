@@ -31,7 +31,7 @@
     .accordion {
       .accordion-item {
         border: none;
-        padding: 3px 0;
+        padding: 0 0 10px 0;
         .main-btn {
           display: flex;
           justify-content: space-between;
@@ -130,10 +130,15 @@
       }
     }
     .social {
-      width: 25%;
+      width: 46%;
       margin: 0 auto;
+      display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 20px 0;
+      a {
+        color: #b2b2b2;
+      }
     }
   }
 }
