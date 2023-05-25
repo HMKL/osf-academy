@@ -12,9 +12,17 @@
   const getHeaderText = document.querySelectorAll('.header-text');
   const getSubmenu = document.querySelectorAll('.sub-menu');
   const getA = document.querySelectorAll('.target');
+  const getYear = document.querySelectorAll('.year > span');
 
+  const injectYear = () => {
+    let year = new Date();
+    getYear.forEach(element => {
+      element.innerHTML = year.getFullYear();
+    });
+  }
+  injectYear();
 
-
+  console.log(getYear)
 
   const addLines = () => {
     getHamburger.addEventListener('click', () => {
@@ -49,6 +57,27 @@
 
   }
   get();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

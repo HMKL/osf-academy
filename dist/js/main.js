@@ -71,6 +71,41 @@ let layoutHandler;
 
 
 
+
+        let swiperThird = new Swiper("#swiper-third", {
+            // loop: true,
+            speed: 1000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".right",
+                prevEl: ".left",
+            },
+
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }
+        });
+
+
+
+
+
+
     });
 })(jQuery);
 
@@ -88,9 +123,17 @@ let layoutHandler;
   const getHeaderText = document.querySelectorAll('.header-text');
   const getSubmenu = document.querySelectorAll('.sub-menu');
   const getA = document.querySelectorAll('.target');
+  const getYear = document.querySelectorAll('.year > span');
 
+  const injectYear = () => {
+    let year = new Date();
+    getYear.forEach(element => {
+      element.innerHTML = year.getFullYear();
+    });
+  }
+  injectYear();
 
-
+  console.log(getYear)
 
   const addLines = () => {
     getHamburger.addEventListener('click', () => {
@@ -125,6 +168,27 @@ let layoutHandler;
 
   }
   get();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

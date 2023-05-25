@@ -1,0 +1,133 @@
+.osf-footer-mobile {
+  display: block;
+  @media (min-width: $md) {
+    display: none;
+  }
+  .wrap {
+    width: calc(100% - 30px);
+
+    margin: 0 auto;
+    @media (min-width: $md) {
+      max-width: 1170px;
+    }
+    p,
+    span,
+    h1,
+    button {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    ul {
+      padding: 17px 0;
+      margin: 0;
+      list-style: none;
+      li {
+        font-size: 13px;
+        line-height: 18px;
+        color: #45413e;
+        font-weight: 400;
+      }
+    }
+    .accordion {
+      .accordion-item {
+        border: none;
+        padding: 3px 0;
+        .main-btn {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          border: none;
+          background: none;
+          position: relative;
+          padding: 0;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 25%;
+            height: 1px;
+            top: 100%;
+            left: 0;
+
+            background: #84bc22;
+            transition: all 0.15s ease-in-out;
+          }
+          p {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #333333;
+            font-weight: 700;
+            transition: all 0.15s ease-in-out;
+          }
+          .burger {
+            width: 25px;
+            height: 30px;
+            position: relative;
+            span {
+              position: absolute;
+              width: 100%;
+              // height: 3px;
+              // background: red;
+              top: 0;
+              left: 0;
+              &:after,
+              &:before {
+                content: "";
+                position: absolute;
+                top: 13px;
+                background: #000;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                transition: transform 0.15s ease-in-out;
+              }
+              &:before {
+                top: 19px;
+              }
+            }
+          }
+          &.collapsed {
+            .burger {
+              span {
+                &:after,
+                &:before {
+                  background: #84bc22;
+                  transform: rotate(90deg);
+                }
+                &:before {
+                  left: 6px;
+                  top: 13px;
+                }
+              }
+            }
+            &:after {
+              width: 75%;
+              transition: all 0.15s ease-in-out;
+            }
+            p {
+              color: #84bc22;
+              transition: all 0.15s ease-in-out;
+            }
+          }
+        }
+        .accordion-collapse {
+          .accordion-body {
+            .contact {
+              a {
+                display: block;
+                text-decoration: none;
+                font-size: 13px;
+                line-height: 18px;
+                color: #45413e;
+                font-weight: 400;
+                &:nth-child(1) {
+                  padding: 20px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

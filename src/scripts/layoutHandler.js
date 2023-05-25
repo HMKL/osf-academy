@@ -71,5 +71,40 @@ let layoutHandler;
 
 
 
+
+        let swiperThird = new Swiper("#swiper-third", {
+            // loop: true,
+            speed: 1000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".right",
+                prevEl: ".left",
+            },
+
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }
+        });
+
+
+
+
+
+
     });
 })(jQuery);

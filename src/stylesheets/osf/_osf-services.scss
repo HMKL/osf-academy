@@ -1,0 +1,92 @@
+.osf-services {
+  background: #45413e;
+  .wrap {
+    width: calc(100% - 30px);
+
+    margin: 0 auto;
+    @media (min-width: $md) {
+      max-width: 1170px;
+    }
+    p,
+    span,
+    h1,
+    li {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .items-service {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 0;
+      @media (min-width: $md) {
+        flex-direction: row;
+        padding: 49px 0 49px 0;
+      }
+      .items {
+        width: 90%;
+        display: flex;
+        align-items: start;
+        @media (min-width: $md) {
+          width: calc(33.3% - 10px);
+          margin: 0;
+        }
+        @media (min-width: $xl) {
+          width: calc(33.3% - 50px);
+        }
+        ul {
+          margin: 0;
+          padding: 0 0 0 51px;
+          list-style: none;
+          @media (min-width: $md) {
+            padding: 0 0 0 40px;
+          }
+          li {
+            &:nth-child(1) {
+              font-size: 18px;
+              line-height: 24px;
+              text-transform: uppercase;
+              color: #fff;
+              font-weight: 700;
+              padding: 0px 0 20px 0;
+            }
+            &:nth-child(2) {
+              font-size: 14px;
+              line-height: 18px;
+              color: #868380;
+              font-weight: 400;
+            }
+          }
+        }
+        &:nth-child(1) {
+          margin: 0 0 60px auto;
+
+          @media (min-width: $md) {
+            margin: 0;
+          }
+        }
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+          margin: 0 auto 60px;
+          @media (min-width: $md) {
+            flex-direction: row;
+            margin: 0;
+          }
+          ul {
+            padding: 0 51px 0 0;
+            @media (min-width: $md) {
+              padding: 0 0 0 40px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          margin: 0 0 8px auto;
+          @media (min-width: $md) {
+            flex-direction: row;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
