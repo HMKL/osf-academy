@@ -51,6 +51,7 @@ let layoutHandler;
         let swiperSecond = new Swiper('#second-swiper', {
             // spaceBetween: 30,
             // effect: 'coverflow',
+            speed: 1000,
             paginationClickable: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -103,7 +104,18 @@ let layoutHandler;
 
 
 
+        new PureCounter({
+            selector: ".counter",
 
+            start: 0,
+            end: 55,
+            duration: 1.5,
+            delay: 10,
+            once: true,
+            pulse: true,
+            legacy: false,
+            formater: "us-US",
+        });
 
 
     });
