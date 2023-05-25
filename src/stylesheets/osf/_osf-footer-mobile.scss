@@ -130,15 +130,26 @@
       }
     }
     .social {
-      width: 46%;
+      width: 31%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 0;
+      padding: 24px 0;
       a {
         color: #b2b2b2;
       }
+    }
+  }
+  .icons {
+    background: #262a32;
+    .icons-inner {
+      padding: 13px 0;
+      width: 64%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

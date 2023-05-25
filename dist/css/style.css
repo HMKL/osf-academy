@@ -8541,7 +8541,7 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
 }
 
 .osf-footer-mobile .wrap .social {
-  width: 46%;
+  width: 31%;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8552,11 +8552,30 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 24px 0;
 }
 
 .osf-footer-mobile .wrap .social a {
   color: #b2b2b2;
+}
+
+.osf-footer-mobile .icons {
+  background: #262a32;
+}
+
+.osf-footer-mobile .icons .icons-inner {
+  padding: 13px 0;
+  width: 64%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
