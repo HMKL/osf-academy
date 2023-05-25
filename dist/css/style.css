@@ -8495,7 +8495,7 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   background: #000;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 1px;
   transition: -webkit-transform 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
@@ -8508,8 +8508,8 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
 .osf-footer-mobile .wrap .accordion .accordion-item .main-btn.collapsed .burger span:after,
 .osf-footer-mobile .wrap .accordion .accordion-item .main-btn.collapsed .burger span:before {
   background: #84bc22;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(103deg);
+  transform: rotate(103deg);
 }
 
 .osf-footer-mobile .wrap .accordion .accordion-item .main-btn.collapsed .burger span:before {
@@ -8518,13 +8518,25 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
 }
 
 .osf-footer-mobile .wrap .accordion .accordion-item .main-btn.collapsed:after {
-  width: 75%;
+  width: calc(100% - 25px);
   transition: all 0.15s ease-in-out;
 }
 
 .osf-footer-mobile .wrap .accordion .accordion-item .main-btn.collapsed p {
   color: #84bc22;
   transition: all 0.15s ease-in-out;
+}
+
+.osf-footer-mobile .wrap .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 0;
+}
+
+.osf-footer-mobile .wrap .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #45413e;
+  font-weight: 400;
+  padding: 17px 0 0 0;
 }
 
 .osf-footer-mobile .wrap .accordion .accordion-item .accordion-collapse .accordion-body .contact a {
