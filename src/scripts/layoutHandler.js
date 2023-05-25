@@ -30,7 +30,6 @@ let layoutHandler;
 
 
         let swiperMain = new Swiper('#main-swiper', {
-            // spaceBetween: 30,
             effect: 'coverflow',
             pagination: {
                 el: '.swiper-pagination',
@@ -49,9 +48,9 @@ let layoutHandler;
 
 
         let swiperSecond = new Swiper('#second-swiper', {
-            // spaceBetween: 30,
-            // effect: 'coverflow',
-            speed: 1000,
+            effect: 'coverflow',
+            rewind: true,
+            speed: 600,
             paginationClickable: true,
             pagination: {
                 el: '.swiper-pagination',

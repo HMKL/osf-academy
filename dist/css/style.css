@@ -8540,6 +8540,17 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   padding: 20px 0;
 }
 
+.osf-footer-mobile .wrap .social {
+  width: 25%;
+  margin: 0 auto;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (min-width: 576px) {
   .container,
   .container-sm {

@@ -22,7 +22,6 @@
   }
   injectYear();
 
-  console.log(getYear)
 
   const addLines = () => {
     getHamburger.addEventListener('click', () => {
