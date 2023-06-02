@@ -1,0 +1,46 @@
+.landing {
+  background: #f2edea;
+  .osf-clp {
+    .osf-products {
+      .wrap {
+        .apparel {
+          text-align: center;
+          padding: 26px 0;
+          P {
+            font-size: 16px;
+            color: #45413e;
+            font-weight: 400;
+            .count {
+              padding: 0 10px 0 0;
+            }
+          }
+        }
+        .product-items {
+          &:after {
+            content: "";
+            display: block;
+            width: calc(33.3% - 10px);
+          }
+        }
+      }
+    }
+  }
+
+  .osf-products {
+    background: none;
+    .wrap {
+      .load-more {
+        a {
+          background: #84bc22;
+          padding: 6px 34px;
+          i {
+            display: none;
+          }
+          &:hover {
+            border: 2px solid #d9d9d9;
+          }
+        }
+      }
+    }
+  }
+}

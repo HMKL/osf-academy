@@ -1,0 +1,58 @@
+.home {
+  .text-info {
+    background: #262a32;
+    .inner-text {
+      width: calc(100% - 30px);
+      margin: 0 auto;
+      padding: 28px 0 18px 0;
+      @media (min-width: $lg) {
+        max-width: 1170px;
+        padding: 80px 0 30px 0;
+      }
+
+      p,
+      a,
+      span {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+
+      .text {
+        text-align: center;
+        position: relative;
+
+        p {
+          color: #fff;
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 800;
+          @media (min-width: $lg) {
+            font-size: 24px;
+          }
+        }
+        &:after,
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(0, -50%);
+          height: 2px;
+          width: calc(50% - 83px);
+          background: #fff;
+          opacity: 0.1;
+          @media (min-width: $md) {
+            width: calc(50% - 100px);
+          }
+          @media (min-width: $lg) {
+            width: calc(50% - 126px);
+          }
+        }
+        &:before {
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

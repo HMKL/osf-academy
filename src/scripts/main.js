@@ -13,6 +13,47 @@
   const getSubmenu = document.querySelectorAll('.sub-menu');
   const getA = document.querySelectorAll('.target');
   const getYear = document.querySelectorAll('.year > span');
+  const getLinks = document.querySelector('.link');
+
+  const getInputs = document.querySelectorAll('.check-radios > input');
+  const getHideFilter = document.querySelector('.hide-filter');
+
+
+
+
+  // const changeNameFilter = () => {
+  //   getHideFilter.addEventListener('click', () => {
+  //     if (getHideFilter.classList.contains('collapsed')) {
+  //       getHideFilter.innerHTML = 'Show Filter';
+  //     } else if (getHideFilter.classList.contains('hide-filter')) {
+  //       getHideFilter.innerHTML = 'Hide Filter';
+  //     }
+  //   });
+  // };
+  // changeNameFilter();
+
+  const addColor = () => {
+    getInputs.forEach(element => {
+      element.addEventListener('click', (e) => {
+        console.log(e.target.id)
+        if (e.target.id === 'Radios2') {
+          getInputs[1].style.backgroundColor = "red";
+        }
+
+
+
+
+
+      });
+    });
+  }
+  addColor();
+
+
+
+
+
+
 
   const injectYear = () => {
     let year = new Date();
@@ -56,18 +97,6 @@
 
   }
   get();
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

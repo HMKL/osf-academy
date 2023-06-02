@@ -1,42 +1,61 @@
 {% extends "partials/layout.html" %}
 
 {% block content %}
+
+
 <!-- OSF Header start-->
 {% include "partials/osf/osf-header.html" %}
 <!-- OSF Header end -->
 
-<!-- OSF Hero start -->
-{% include "partials/osf/osf-hero.html" %}
-<!-- OSF Header end -->
+<main class="home">
 
-<!-- OSF Products start -->
-{% include "partials/osf/osf-products.html" %}
-<!-- OSF Products end -->
 
-<!-- OSF Carousel Mobile start -->
-{% include "partials/osf/osf-carousel-mobile.html" %}
-<!-- OSF Carousel Mobile end -->
+    <!-- OSF Hero start -->
+    {% include "partials/osf/osf-hero.html" %}
+    <!-- OSF Hero end -->
 
-<!-- OSF Banner start -->
-{% include "partials/osf/osf-banner.html" %}
-<!-- OSF Banner end -->
+    <!-- OSF Title start -->
+    {% include "partials/osf/osf-title-home.html" %}
+    <!-- OSF Title end -->
 
-<!-- OSF Featured start -->
-{% include "partials/osf/osf-featured.html" %}
-<!-- OSF Featured end -->
+    <!-- OSF Products start -->
+    {% include "partials/osf/osf-products.html" %}
+    <!-- OSF Products end -->
 
-<!-- OSF Services start -->
-{% include "partials/osf/osf-services.html" %}
-<!-- OSF Services end -->
+    <!-- OSF Carousel Mobile start -->
+    {% include "partials/osf/osf-carousel-mobile.html" %}
+    <!-- OSF Carousel Mobile end -->
+
+    <!-- OSF Banner start -->
+    {% include "partials/osf/osf-banner.html" %}
+    <!-- OSF Banner end -->
+
+    <!-- OSF Featured start -->
+    {% include "partials/osf/osf-featured.html" %}
+    <!-- OSF Featured end -->
+
+    <!-- OSF Services start -->
+    {% include "partials/osf/osf-services.html" %}
+    <!-- OSF Services end -->
+
+</main>
+
 
 
 <!-- OSF Footer start -->
 {% include "partials/osf/osf-footer.html" %}
 <!-- OSF Footer end -->
 
-
 <!-- OSF Footer start -->
 {% include "partials/osf/osf-footer-mobile.html" %}
 <!-- OSF Footer end -->
+
+
+
+
+
+
+
+
 
 {% endblock %}

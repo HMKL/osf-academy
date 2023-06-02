@@ -21,7 +21,11 @@
 // Sections
 @import "sections/sections";
 
-//OSF
+// Import common OSF Sections
+@import "osf/osf-footer";
+@import "osf/osf-footer-mobile";
+
+//OSF-home page
 
 @import "osf/osf-header";
 @import "osf/osf-hero";
@@ -30,5 +34,10 @@
 @import "osf/osf-carousel-mobile";
 @import "osf/osf-featured";
 @import "osf/osf-services";
-@import "osf/osf-footer";
-@import "osf/osf-footer-mobile";
+@import "osf/osf-title-home";
+
+//OSF-category page
+
+@import "osf/category/osf-clp";
+@import "osf/category/osf-filter";
+@import "osf/category/osf-title-category";

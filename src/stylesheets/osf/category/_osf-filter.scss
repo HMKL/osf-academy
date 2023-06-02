@@ -1,0 +1,89 @@
+.osf-filter {
+  &.show-filter {
+    display: none;
+  }
+
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 6px;
+    padding: 33px 35px;
+
+    @media (min-width: $lg) {
+      max-width: 1170px;
+    }
+    p,
+    a,
+    span {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .inner-filter {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      @media (min-width: $md) {
+        flex-direction: row;
+      }
+      &:nth-child(1) {
+        padding: 0 0 28px 0;
+      }
+      .filter-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 262px;
+        position: relative;
+        a {
+          &.link {
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #45413e;
+            font-weight: 400;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            border-radius: 17px;
+            border: 2px solid #a2a09e;
+            max-width: 200px;
+            width: 100%;
+            padding: 5px 0 5px 16px;
+            &:after {
+              content: "";
+              position: absolute;
+              background: url(../images/arrow.png);
+              width: 7px;
+              height: 6px;
+              top: 50%;
+              left: 86%;
+              transform: translate(0px, -50%) rotateX(360deg);
+            }
+            &.show:after {
+              transform: translate(0px, -50%) rotateX(180deg);
+            }
+            span {
+              padding: 0px 45px 0 0;
+              display: inline-block;
+            }
+          }
+        }
+        ul {
+          &.dropdown-menu {
+            &.show {
+              width: calc(100% - 62px);
+            }
+          }
+        }
+        .check-radios {
+          display: flex;
+          max-width: 200px;
+          width: 100%;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}

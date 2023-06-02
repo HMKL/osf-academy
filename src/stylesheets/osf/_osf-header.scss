@@ -182,31 +182,6 @@ header {
                                 }
                               }
                             }
-
-                            .sub-menu {
-                              // position: absolute;
-                              display: flex;
-                              flex-direction: column;
-                              display: none;
-                              padding: 7px 0 0 15px;
-                              @media (min-width: $md) {
-                                position: relative;
-                                flex-direction: row;
-                                display: flex;
-                                padding: 7px 0 0 0;
-                              }
-
-                              li {
-                                a {
-                                  text-transform: capitalize;
-                                  color: #fff;
-                                  font-size: 16px;
-                                  line-height: 31px;
-                                  font-weight: 400;
-                                  padding: 0;
-                                }
-                              }
-                            }
                           }
 
                           a {
@@ -217,6 +192,30 @@ header {
                             font-weight: 400;
                             &:after {
                               content: none;
+                            }
+                          }
+                        }
+                        .sub-menu {
+                          position: relative;
+                          flex-direction: column;
+                          display: none;
+                          padding: 7px 0 0 15px;
+                          @media (min-width: $md) {
+                            flex-direction: row;
+                            display: flex;
+                            padding: 7px 0 0 0;
+                          }
+
+                          ul {
+                            li {
+                              a {
+                                text-transform: capitalize;
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 31px;
+                                font-weight: 400;
+                                padding: 0;
+                              }
                             }
                           }
                         }

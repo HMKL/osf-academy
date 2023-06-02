@@ -2,6 +2,7 @@
   display: none;
   @media (min-width: $md) {
     display: block;
+    background: #fff;
   }
   .wrap {
     width: calc(100% - 30px);

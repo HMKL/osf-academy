@@ -31,6 +31,10 @@ let layoutHandler;
 
         let swiperMain = new Swiper('#main-swiper', {
             effect: 'coverflow',
+            speed: 600,
+            autoplay: {
+                delay: 4000,
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -39,10 +43,10 @@ let layoutHandler;
                 rotate: 30,
                 slideShadows: false,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
         });
 
 
@@ -106,6 +110,7 @@ let layoutHandler;
         new PureCounter({
             selector: ".counter",
 
+
             start: 0,
             end: 55,
             duration: 1.5,
@@ -113,7 +118,21 @@ let layoutHandler;
             once: true,
             pulse: true,
             legacy: false,
-            formater: "us-US",
+        });
+
+
+        new PureCounter({
+            selector: ".count",
+
+
+            start: 0,
+            end: 12391,
+            duration: 1.5,
+            delay: 10,
+            once: true,
+            pulse: true,
+            legacy: false,
+            separator: true,
         });
 
 
