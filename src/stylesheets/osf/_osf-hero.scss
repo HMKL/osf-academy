@@ -126,12 +126,14 @@
               }
             }
           }
-        }
-        .swiper-pagination {
-          span {
-            background: red;
-            &.swiper-pagination-bullet-active {
-              background: #fff;
+          .swiper-pagination {
+            &.one {
+              span {
+                background: red;
+                &.swiper-pagination-bullet-active {
+                  background: #fff;
+                }
+              }
             }
           }
         }

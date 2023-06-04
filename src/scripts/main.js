@@ -17,6 +17,8 @@
 
   const getInputs = document.querySelectorAll('.check-radios > input');
   const getHideFilter = document.querySelector('.hide-filter');
+  const getSecond = document.querySelector('.osf-mobile-menu')
+
 
 
 
@@ -66,8 +68,9 @@
 
   const addLines = () => {
     getHamburger.addEventListener('click', () => {
-      getNav.classList.toggle('show');
+      // getNav.classList.toggle('show');
       getHamburgerSpan.classList.toggle('lines');
+      getSecond.classList.toggle('bla');
     });
   }
   addLines();
@@ -97,10 +100,6 @@
 
   }
   get();
-
-
-
-
 
 
 

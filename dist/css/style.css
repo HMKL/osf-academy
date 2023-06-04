@@ -7387,6 +7387,21 @@ section .section-title.no-decoration:after {
   align-items: center;
 }
 
+.osf-mobile-menu {
+  background: red;
+  position: absolute;
+  z-index: 1;
+  left: -100vw;
+  height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.osf-mobile-menu.bla {
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
 header {
   position: relative;
 }
@@ -7846,11 +7861,11 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   margin: 0 0 0 auto;
 }
 
-.osf-hero .inner .items:nth-child(1) .swiper-pagination span {
+.osf-hero .inner .items:nth-child(1) .swiper .swiper-pagination.one span {
   background: red;
 }
 
-.osf-hero .inner .items:nth-child(1) .swiper-pagination span.swiper-pagination-bullet-active {
+.osf-hero .inner .items:nth-child(1) .swiper .swiper-pagination.one span.swiper-pagination-bullet-active {
   background: #fff;
 }
 
@@ -8297,7 +8312,7 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   font-weight: 400;
 }
 
-.osf-carousel-mobile .swiper .swiper-pagination {
+.osf-carousel-mobile .swiper .swiper-pagination-two {
   position: relative;
   bottom: 0;
   display: -webkit-flex;
@@ -8312,12 +8327,12 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   padding: 30px 0 0 0;
 }
 
-.osf-carousel-mobile .swiper .swiper-pagination span {
+.osf-carousel-mobile .swiper .swiper-pagination-two span {
   background: #fff;
   opacity: 0.5;
 }
 
-.osf-carousel-mobile .swiper .swiper-pagination span.swiper-pagination-bullet-active {
+.osf-carousel-mobile .swiper .swiper-pagination-two span.swiper-pagination-bullet-active {
   width: 15px;
   height: 15px;
   border-radius: 10px;

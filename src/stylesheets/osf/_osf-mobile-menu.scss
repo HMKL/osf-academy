@@ -1,0 +1,16 @@
+.osf-mobile-menu {
+  background: red;
+  position: absolute;
+  z-index: 1;
+  left: -100vw;
+  height: 300px;
+  transition: all 0.3s ease-in-out;
+  // @media (min-width: $lg) {
+  //   display: none;
+  // }
+  &.bla {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+}

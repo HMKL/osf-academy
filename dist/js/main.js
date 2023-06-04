@@ -36,17 +36,14 @@ let layoutHandler;
                 delay: 4000,
             },
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination.one',
                 clickable: true,
             },
             coverflowEffect: {
                 rotate: 30,
                 slideShadows: false,
             },
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
+
         });
 
 
@@ -57,17 +54,14 @@ let layoutHandler;
             speed: 600,
             paginationClickable: true,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination-two',
                 clickable: true,
             },
             coverflowEffect: {
                 rotate: 30,
                 slideShadows: false,
             },
-            navigation: {
-                nextEl: '.forward',
-                prevEl: '.backward',
-            },
+
         });
 
 
@@ -77,12 +71,8 @@ let layoutHandler;
 
 
         let swiperThird = new Swiper("#swiper-third", {
-            // loop: true,
             speed: 1000,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+
             navigation: {
                 nextEl: ".right",
                 prevEl: ".left",
@@ -158,6 +148,8 @@ let layoutHandler;
 
   const getInputs = document.querySelectorAll('.check-radios > input');
   const getHideFilter = document.querySelector('.hide-filter');
+  const getSecond = document.querySelector('.osf-mobile-menu')
+
 
 
 
@@ -207,8 +199,9 @@ let layoutHandler;
 
   const addLines = () => {
     getHamburger.addEventListener('click', () => {
-      getNav.classList.toggle('show');
+      // getNav.classList.toggle('show');
       getHamburgerSpan.classList.toggle('lines');
+      getSecond.classList.toggle('bla');
     });
   }
   addLines();
@@ -238,10 +231,6 @@ let layoutHandler;
 
   }
   get();
-
-
-
-
 
 
 
