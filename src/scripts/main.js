@@ -70,7 +70,7 @@
     getHamburger.addEventListener('click', () => {
       // getNav.classList.toggle('show');
       getHamburgerSpan.classList.toggle('lines');
-      getSecond.classList.toggle('bla');
+      getSecond.classList.toggle('show-mobile');
     });
   }
   addLines();

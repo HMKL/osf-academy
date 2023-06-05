@@ -7388,18 +7388,88 @@ section .section-title.no-decoration:after {
 }
 
 .osf-mobile-menu {
-  background: red;
+  background: #262a32;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   left: -100vw;
-  height: 300px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.osf-mobile-menu.show-mobile {
+  left: 0;
   transition: all 0.3s ease-in-out;
 }
 
-.osf-mobile-menu.bla {
-  left: 0;
-  transition: all 0.3s ease-in-out;
+.osf-mobile-menu p,
+.osf-mobile-menu span,
+.osf-mobile-menu h1,
+.osf-mobile-menu .h1,
+.osf-mobile-menu button {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.osf-mobile-menu .wrap {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.osf-mobile-menu .wrap .inner .accordion-item .mobile-btn {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  background: #262a32;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.osf-mobile-menu .wrap .inner .accordion-item .mobile-btn .lines {
+  width: 20px;
+  height: 20px;
   position: relative;
+}
+
+.osf-mobile-menu .wrap .inner .accordion-item .mobile-btn .lines span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 65%;
+  height: 2px;
+  background: #84bc22;
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.osf-mobile-menu .wrap .inner .accordion-item .mobile-btn.collapsed .lines span {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+}
+
+.osf-mobile-menu .wrap .inner .accordion-item .accordion-collapse ul {
+  list-style: none;
+  margin: 0;
+}
+
+.osf-mobile-menu .wrap .inner .accordion-item .accordion-collapse ul li {
+  color: #fff;
 }
 
 header {
@@ -13279,6 +13349,10 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
 
   .osf-footer .wrap .inner .items.links .inside p.last {
     width: 161.52px;
+  }
+
+  .osf-mobile-menu {
+    display: none;
   }
 
   header .osf-header {
