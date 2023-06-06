@@ -23,16 +23,19 @@
 
 
 
-  // const changeNameFilter = () => {
-  //   getHideFilter.addEventListener('click', () => {
-  //     if (getHideFilter.classList.contains('collapsed')) {
-  //       getHideFilter.innerHTML = 'Show Filter';
-  //     } else if (getHideFilter.classList.contains('hide-filter')) {
-  //       getHideFilter.innerHTML = 'Hide Filter';
-  //     }
-  //   });
-  // };
-  // changeNameFilter();
+  const changeNameFilter = () => {
+    // NOTE: This "if" is checking if element exists before calling addEventListener(), else JS will trow an error in the page that element does not exist
+    if (getHideFilter) {
+      getHideFilter.addEventListener('click', () => {
+        if (getHideFilter.classList.contains('collapsed')) {
+          getHideFilter.innerHTML = 'Show Filter';
+        } else if (getHideFilter.classList.contains('hide-filter')) {
+          getHideFilter.innerHTML = 'Hide Filter';
+        }
+      });
+    }
+  };
+  changeNameFilter();
 
   const addColor = () => {
     getInputs.forEach(element => {

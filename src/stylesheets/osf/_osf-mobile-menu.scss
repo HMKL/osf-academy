@@ -66,6 +66,9 @@
           }
         }
         .accordion-collapse {
+          &.collapsing {
+            transition: height 0.18s ease-in-out;
+          }
           ul {
             list-style: none;
             margin: 0;

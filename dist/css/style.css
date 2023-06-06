@@ -7463,6 +7463,10 @@ section .section-title.no-decoration:after {
   background: #fff;
 }
 
+.osf-mobile-menu .wrap .inner .accordion-item .accordion-collapse.collapsing {
+  transition: height 0.18s ease-in-out;
+}
+
 .osf-mobile-menu .wrap .inner .accordion-item .accordion-collapse ul {
   list-style: none;
   margin: 0;
