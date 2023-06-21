@@ -6,14 +6,14 @@
 
   const getHamburger = document.querySelector('.hamburger');
   const getHamburgerSpan = document.querySelector('.hamburger > span');
-  const getNav = document.querySelector('.main-nav');
-  const getMega = document.querySelector('.mega-menu');
-  const getUl = document.querySelectorAll('.main-ul > li');
+  // const getNav = document.querySelector('.main-nav');
+  // const getMega = document.querySelector('.mega-menu');
+  // const getUl = document.querySelectorAll('.main-ul > li');
   const getHeaderText = document.querySelectorAll('.header-text');
   const getSubmenu = document.querySelectorAll('.sub-menu');
-  const getA = document.querySelectorAll('.target');
+  // const getA = document.querySelectorAll('.target');
   const getYear = document.querySelectorAll('.year > span');
-  const getLinks = document.querySelector('.link');
+  // const getLinks = document.querySelector('.link');
 
   const getInputs = document.querySelectorAll('.check-radios > input');
   const getHideFilter = document.querySelector('.hide-filter');
@@ -36,6 +36,9 @@
     }
   };
   changeNameFilter();
+
+
+
 
   const addColor = () => {
     getInputs.forEach(element => {
@@ -69,14 +72,25 @@
   injectYear();
 
 
+
+
+
+
+
   const addLines = () => {
     getHamburger.addEventListener('click', () => {
       // getNav.classList.toggle('show');
       getHamburgerSpan.classList.toggle('lines');
       getSecond.classList.toggle('show-mobile');
+
     });
   }
   addLines();
+
+
+
+
+
 
 
   const get = () => {

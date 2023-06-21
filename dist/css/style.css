@@ -7524,17 +7524,7 @@ header .osf-header .logo {
 }
 
 header .osf-header .main-nav {
-  position: absolute;
-  left: -100vw;
-}
-
-header .osf-header .main-nav.show {
-  left: 0;
-  top: 46px;
-  transition: 0.3s ease-in-out;
-  width: 100%;
-  background: #262a32;
-  z-index: 2;
+  display: none;
 }
 
 header .osf-header .main-nav .main-ul {
@@ -7548,10 +7538,6 @@ header .osf-header .main-nav .main-ul {
 
 header .osf-header .main-nav .main-ul li {
   padding: 10px 20px;
-}
-
-header .osf-header .main-nav .main-ul li:last-of-type {
-  padding: 180px 20px 30px;
 }
 
 header .osf-header .main-nav .main-ul li a {
@@ -8921,6 +8907,94 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
 }
 
 .landing .text-info .inner-text a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #8dc73e;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+
+.cart .text-info {
+  background: #f2edea;
+}
+
+.cart .text-info .inner-text {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  padding: 28px 0 18px 0;
+}
+
+.cart .text-info .inner-text p,
+.cart .text-info .inner-text a,
+.cart .text-info .inner-text span {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.cart .text-info .inner-text nav .breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.cart .text-info .inner-text nav .breadcrumbs .breadcrumb-item {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.cart .text-info .inner-text nav .breadcrumbs .breadcrumb-item a {
+  color: #85c441;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cart .text-info .inner-text nav .breadcrumbs .breadcrumb-item.active {
+  color: #000;
+}
+
+.cart .text-info .inner-text nav .breadcrumbs .breadcrumb-item.active:before {
+  padding: 0 14px;
+}
+
+.cart .text-info .inner-text .text {
+  text-align: center;
+  position: relative;
+}
+
+.cart .text-info .inner-text .text p {
+  color: #45413e;
+  display: inline-block;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.cart .text-info .inner-text .text:after,
+.cart .text-info .inner-text .text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  height: 2px;
+  width: calc(50% - 83px);
+  background: #fff;
+  opacity: 0.5;
+}
+
+.cart .text-info .inner-text .text:before {
+  right: 0;
+  left: 0;
+}
+
+.cart .text-info .inner-text a {
   text-decoration: none;
   font-size: 13px;
   color: #8dc73e;
@@ -11862,6 +11936,11 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   .landing .text-info .inner-text .text:before {
     width: calc(50% - 100px);
   }
+
+  .cart .text-info .inner-text .text:after,
+  .cart .text-info .inner-text .text:before {
+    width: calc(50% - 100px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -13371,11 +13450,7 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   }
 
   header .osf-header .main-nav {
-    position: static;
-  }
-
-  header .osf-header .main-nav.show {
-    background: transparent;
+    display: block;
   }
 
   header .osf-header .main-nav .main-ul {
@@ -13585,6 +13660,24 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
   }
 
   .landing .text-info .inner-text a {
+    display: none;
+  }
+
+  .cart .text-info .inner-text {
+    max-width: 1170px;
+    padding: 80px 0 30px 0;
+  }
+
+  .cart .text-info .inner-text .text p {
+    font-size: 48px;
+  }
+
+  .cart .text-info .inner-text .text:after,
+  .cart .text-info .inner-text .text:before {
+    width: calc(50% - 126px);
+  }
+
+  .cart .text-info .inner-text a {
     display: none;
   }
 }
@@ -15130,10 +15223,6 @@ header .osf-header .icons a:nth-child(2) .modal .modal-dialog .inside {
 
   .osf-footer .wrap .inner .items.links .inside p.last {
     width: 190.13px;
-  }
-
-  header .osf-header .main-nav {
-    padding: 0 0 0 147px;
   }
 
   .osf-hero .inner .items:nth-child(1) {
