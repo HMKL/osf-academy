@@ -8,8 +8,10 @@
     margin: 0 auto;
     background: #fff;
     border-radius: 6px;
-    padding: 33px 35px;
-
+    padding: 0;
+    @media (min-width: $md) {
+      padding: 20px 35px;
+    }
     @media (min-width: $lg) {
       max-width: 1170px;
     }
@@ -26,15 +28,23 @@
       @media (min-width: $md) {
         flex-direction: row;
       }
-      &:nth-child(1) {
-        padding: 0 0 28px 0;
-      }
+
       .filter-items {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 262px;
         position: relative;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 14px 0;
+        @media (min-width: $md) {
+          flex-direction: column;
+          margin: 0;
+        }
+        @media (min-width: $lg) {
+          flex-direction: row;
+        }
         a {
           &.link {
             font-size: 14px;

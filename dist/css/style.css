@@ -8850,7 +8850,7 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login a:hove
   margin: 0 auto;
   background: #fff;
   border-radius: 6px;
-  padding: 33px 35px;
+  padding: 0;
 }
 
 .osf-filter .wrap p,
@@ -8872,10 +8872,6 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login a:hove
   flex-direction: column;
 }
 
-.osf-filter .wrap .inner-filter:nth-child(1) {
-  padding: 0 0 28px 0;
-}
-
 .osf-filter .wrap .inner-filter .filter-items {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8888,6 +8884,11 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login a:hove
   justify-content: space-between;
   width: 262px;
   position: relative;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 14px 0;
 }
 
 .osf-filter .wrap .inner-filter .filter-items a.link {
@@ -12049,10 +12050,21 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login a:hove
     width: calc(50% - 100px);
   }
 
+  .osf-filter .wrap {
+    padding: 20px 35px;
+  }
+
   .osf-filter .wrap .inner-filter {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  .osf-filter .wrap .inner-filter .filter-items {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
   }
 
   .landing .text-info .inner-text .text:after,
@@ -13766,6 +13778,12 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login a:hove
 
   .osf-filter .wrap {
     max-width: 1170px;
+  }
+
+  .osf-filter .wrap .inner-filter .filter-items {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .landing .text-info .inner-text {
