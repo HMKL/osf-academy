@@ -7835,7 +7835,7 @@ header .osf-header .icons .modal .modal-dialog .modal-content .close {
   width: 25px;
   height: 25px;
   position: absolute;
-  background: red;
+  background: #198754;
   top: 0;
   right: 0;
   padding: 0;
@@ -7849,9 +7849,10 @@ header .osf-header .icons .modal .modal-dialog .modal-content .close i {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  color: #fff;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content .header {
+header .osf-header .icons .modal .modal-dialog .modal-content .header-modal {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7862,17 +7863,17 @@ header .osf-header .icons .modal .modal-dialog .modal-content .header {
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  padding: 58px 0;
+  padding: 51px 0;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content .header h1,
-header .osf-header .icons .modal .modal-dialog .modal-content .header .h1 {
+header .osf-header .icons .modal .modal-dialog .modal-content .header-modal h1,
+header .osf-header .icons .modal .modal-dialog .modal-content .header-modal .h1 {
   font-size: 30px;
   color: #45413e;
   font-weight: 800;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form div {
+header .osf-header .icons .modal .modal-dialog .modal-content form .access {
   width: 400px;
   margin: 0 auto;
   display: -webkit-flex;
@@ -7887,7 +7888,7 @@ header .osf-header .icons .modal .modal-dialog .modal-content form div {
   position: relative;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form div label {
+header .osf-header .icons .modal .modal-dialog .modal-content form .access label {
   font-size: 14px;
   line-height: 26px;
   color: #45413e;
@@ -7901,9 +7902,10 @@ header .osf-header .icons .modal .modal-dialog .modal-content form div label {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: "Lato", sans-serif;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form div label a {
+header .osf-header .icons .modal .modal-dialog .modal-content form .access label a {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1px;
@@ -7912,12 +7914,20 @@ header .osf-header .icons .modal .modal-dialog .modal-content form div label a {
   font-weight: 400;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form div input {
+header .osf-header .icons .modal .modal-dialog .modal-content form .access .form-control {
   border: 2px solid #d7d7d7;
   border-radius: 19px;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login a {
+header .osf-header .icons .modal .modal-dialog .modal-content form .access .form-control:focus {
+  box-shadow: none;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .login {
+  padding: 48px 0;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-login a {
   width: 181px;
   height: 36px;
   border-radius: 19px;
@@ -7939,8 +7949,21 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login a {
   text-decoration: none;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login a:hover {
+header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-login a:hover {
   color: #000;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-create {
+  text-align: center;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-create a {
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 43px;
+  color: #84bc22;
+  font-weight: 400;
 }
 
 .osf-hero {
