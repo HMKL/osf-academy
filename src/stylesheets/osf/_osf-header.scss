@@ -391,7 +391,7 @@ header {
               flex-direction: row;
               justify-content: center;
               position: relative;
-              padding: 51px 0;
+              padding: 41px 0;
               h1 {
                 font-size: 30px;
                 color: #45413e;
@@ -399,70 +399,85 @@ header {
               }
             }
             form {
-              .access {
+              .inner-form {
                 width: 400px;
                 margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                position: relative;
-                label {
-                  font-size: 14px;
-                  line-height: 26px;
-                  color: #45413e;
-                  font-weight: 400;
+                .access {
                   display: flex;
+                  flex-direction: column;
                   justify-content: space-between;
-                  align-items: center;
-                  font-family: "Lato", sans-serif;
-                  a {
-                    text-decoration: none;
-                    font-size: 12px;
-                    letter-spacing: 1px;
-                    line-height: 43px;
-                    color: #84bc22;
-                    font-weight: 400;
-                  }
-                }
-                .form-control {
-                  border: 2px solid #d7d7d7;
-                  border-radius: 19px;
-                  &:focus {
-                    box-shadow: none;
-                  }
-                }
-              }
-              .login {
-                padding: 48px 0;
-                .btn-login {
-                  a {
-                    width: 181px;
-                    height: 36px;
-                    border-radius: 19px;
-                    background-color: #84bc22;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 auto;
+                  position: relative;
+                  label {
                     font-size: 14px;
-                    text-transform: uppercase;
-                    color: #fff;
+                    line-height: 26px;
+                    color: #45413e;
                     font-weight: 400;
-                    text-decoration: none;
-                    &:hover {
-                      color: #000;
+                    padding: 0 0 10px 0;
+                    font-family: "Lato", sans-serif;
+                    &.second-label {
+                      display: flex;
+                      width: 100%;
+                      justify-content: space-between;
+                      align-items: center;
+                      padding: 15px 0 10px 0;
+                      a {
+                        text-decoration: none;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        color: #84bc22;
+                        font-weight: 400;
+                      }
+                    }
+                  }
+                  .form-control {
+                    border: 2px solid #d7d7d7;
+                    border-radius: 19px;
+                    &:focus {
+                      box-shadow: none;
+                    }
+                  }
+                  .eye-shape {
+                    position: relative;
+                    a {
+                      position: absolute;
+                      top: 50%;
+                      right: 20px;
+                      transform: translate(0, -50%);
                     }
                   }
                 }
-                .btn-create {
-                  text-align: center;
-                  a {
-                    text-decoration: none;
-                    font-size: 12px;
-                    letter-spacing: 1px;
-                    line-height: 43px;
-                    color: #84bc22;
-                    font-weight: 400;
+                .login {
+                  padding: 48px 0;
+                  .btn-login {
+                    a {
+                      width: 181px;
+                      height: 36px;
+                      border-radius: 19px;
+                      background-color: #84bc22;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin: 0 auto;
+                      font-size: 14px;
+                      text-transform: uppercase;
+                      color: #fff;
+                      font-weight: 400;
+                      text-decoration: none;
+                      &:hover {
+                        color: #000;
+                      }
+                    }
+                  }
+                  .btn-create {
+                    text-align: center;
+                    a {
+                      text-decoration: none;
+                      font-size: 12px;
+                      letter-spacing: 1px;
+                      line-height: 43px;
+                      color: #84bc22;
+                      font-weight: 400;
+                    }
                   }
                 }
               }

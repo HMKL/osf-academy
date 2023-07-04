@@ -7863,7 +7863,7 @@ header .osf-header .icons .modal .modal-dialog .modal-content .header-modal {
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  padding: 51px 0;
+  padding: 41px 0;
 }
 
 header .osf-header .icons .modal .modal-dialog .modal-content .header-modal h1,
@@ -7873,9 +7873,12 @@ header .osf-header .icons .modal .modal-dialog .modal-content .header-modal .h1 
   font-weight: 800;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .access {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form {
   width: 400px;
   margin: 0 auto;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -7888,46 +7891,63 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .access {
   position: relative;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .access label {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access label {
   font-size: 14px;
   line-height: 26px;
   color: #45413e;
   font-weight: 400;
+  padding: 0 0 10px 0;
+  font-family: "Lato", sans-serif;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access label.second-label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Lato", sans-serif;
+  padding: 15px 0 10px 0;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .access label a {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access label.second-label a {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1px;
-  line-height: 43px;
   color: #84bc22;
   font-weight: 400;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .access .form-control {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access .form-control {
   border: 2px solid #d7d7d7;
   border-radius: 19px;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .access .form-control:focus {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access .form-control:focus {
   box-shadow: none;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access .eye-shape {
+  position: relative;
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .access .eye-shape a {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .login {
   padding: 48px 0;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-login a {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .login .btn-login a {
   width: 181px;
   height: 36px;
   border-radius: 19px;
@@ -7949,15 +7969,15 @@ header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-l
   text-decoration: none;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-login a:hover {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .login .btn-login a:hover {
   color: #000;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-create {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .login .btn-create {
   text-align: center;
 }
 
-header .osf-header .icons .modal .modal-dialog .modal-content form .login .btn-create a {
+header .osf-header .icons .modal .modal-dialog .modal-content form .inner-form .login .btn-create a {
   text-decoration: none;
   font-size: 12px;
   letter-spacing: 1px;
