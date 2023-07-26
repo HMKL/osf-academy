@@ -250,6 +250,9 @@ let layoutHandler;
   get();
 
 
+  console.log(getHeaderText)
+
+
 
 
 

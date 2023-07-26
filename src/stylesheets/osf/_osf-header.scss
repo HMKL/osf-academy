@@ -364,120 +364,123 @@ header {
       @media (min-width: $lg) {
         display: flex;
       }
-      .modal {
-        .modal-dialog {
-          .modal-content {
-            position: relative;
-            .close {
-              width: 25px;
-              height: 25px;
+    }
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          position: relative;
+          .close {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            background: #198754;
+            top: 0;
+            right: 0;
+            padding: 0;
+            border: none;
+            z-index: 1;
+            i {
               position: absolute;
-              background: #198754;
-              top: 0;
-              right: 0;
-              padding: 0;
-              border: none;
-              z-index: 1;
-              i {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: #fff;
-              }
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: #fff;
             }
-            .header-modal {
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-              position: relative;
-              padding: 41px 0;
-              h1 {
-                font-size: 30px;
-                color: #45413e;
-                font-weight: 800;
-              }
+          }
+          .header-modal {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            padding: 41px 0;
+            h1 {
+              font-size: 30px;
+              color: #45413e;
+              font-weight: 800;
             }
-            form {
-              .inner-form {
-                width: 400px;
-                margin: 0 auto;
-                .access {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-between;
-                  position: relative;
-                  label {
-                    font-size: 14px;
-                    line-height: 26px;
-                    color: #45413e;
-                    font-weight: 400;
-                    padding: 0 0 10px 0;
-                    font-family: "Lato", sans-serif;
-                    &.second-label {
-                      display: flex;
-                      width: 100%;
-                      justify-content: space-between;
-                      align-items: center;
-                      padding: 15px 0 10px 0;
-                      a {
-                        text-decoration: none;
-                        font-size: 12px;
-                        letter-spacing: 1px;
-                        color: #84bc22;
-                        font-weight: 400;
-                      }
-                    }
-                  }
-                  .form-control {
-                    border: 2px solid #d7d7d7;
-                    border-radius: 19px;
-                    &:focus {
-                      box-shadow: none;
-                    }
-                  }
-                  .eye-shape {
-                    position: relative;
-                    a {
-                      position: absolute;
-                      top: 50%;
-                      right: 20px;
-                      transform: translate(0, -50%);
-                    }
-                  }
-                }
-                .login {
-                  padding: 48px 0;
-                  .btn-login {
-                    a {
-                      width: 181px;
-                      height: 36px;
-                      border-radius: 19px;
-                      background-color: #84bc22;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      margin: 0 auto;
-                      font-size: 14px;
-                      text-transform: uppercase;
-                      color: #fff;
-                      font-weight: 400;
-                      text-decoration: none;
-                      &:hover {
-                        color: #000;
-                      }
-                    }
-                  }
-                  .btn-create {
-                    text-align: center;
+          }
+          form {
+            .inner-form {
+              width: 280px;
+              margin: 0 auto;
+              @media (min-width: $lg) {
+                max-width: 400px;
+              }
+              .access {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                label {
+                  font-size: 14px;
+                  line-height: 26px;
+                  color: #45413e;
+                  font-weight: 400;
+                  padding: 0 0 10px 0;
+                  font-family: "Lato", sans-serif;
+                  &.second-label {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 0 10px 0;
                     a {
                       text-decoration: none;
                       font-size: 12px;
                       letter-spacing: 1px;
-                      line-height: 43px;
                       color: #84bc22;
                       font-weight: 400;
                     }
+                  }
+                }
+                .form-control {
+                  border: 2px solid #d7d7d7;
+                  border-radius: 19px;
+                  &:focus {
+                    box-shadow: none;
+                  }
+                }
+                .eye-shape {
+                  position: relative;
+                  a {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translate(0, -50%);
+                  }
+                }
+              }
+              .login {
+                padding: 48px 0;
+                .btn-login {
+                  a {
+                    width: 181px;
+                    height: 36px;
+                    border-radius: 19px;
+                    background-color: #84bc22;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 400;
+                    text-decoration: none;
+                    &:hover {
+                      color: #000;
+                    }
+                  }
+                }
+                .btn-create {
+                  text-align: center;
+                  a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    line-height: 43px;
+                    color: #84bc22;
+                    font-weight: 400;
                   }
                 }
               }

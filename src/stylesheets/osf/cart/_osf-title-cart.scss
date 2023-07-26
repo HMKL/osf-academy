@@ -44,6 +44,7 @@
       .text {
         text-align: center;
         position: relative;
+        padding: 15px 0;
 
         p {
           color: #45413e;
@@ -62,14 +63,14 @@
           right: 0;
           transform: translate(0, -50%);
           height: 2px;
-          width: calc(50% - 83px);
+          width: calc(50% - 130px);
           background: #fff;
           opacity: 0.5;
           @media (min-width: $md) {
-            width: calc(50% - 100px);
+            width: calc(50% - 150px);
           }
           @media (min-width: $lg) {
-            width: calc(50% - 126px);
+            width: calc(50% - 225px);
           }
         }
         &:before {

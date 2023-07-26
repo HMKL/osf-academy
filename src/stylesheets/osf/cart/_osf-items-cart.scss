@@ -1,0 +1,129 @@
+.osf-items-cart {
+  background: #f2edea;
+  .inner {
+    p,
+    a,
+    span,
+    h1,
+    h2 {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .wrap {
+      width: calc(100% - 30px);
+      margin: 0 auto;
+      @media (min-width: $lg) {
+        max-width: 1170px;
+      }
+      .content {
+        background: #fff;
+        border-radius: 8px 8px 0px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 85px 0;
+        .items {
+          width: 83%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          @media (min-width: $lg) {
+            flex-direction: row;
+            padding: 15px 0 15px 0;
+          }
+          .about-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 0;
+            @media (min-width: $lg) {
+              padding: 0;
+            }
+            &:nth-child(1) {
+              flex-direction: column;
+              @media (min-width: $lg) {
+                flex-direction: row;
+              }
+            }
+            .photo {
+              height: 90px;
+              width: 90px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            .price {
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              @media (min-width: $lg) {
+                text-align: left;
+                padding: 0 0 0 25px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 18px;
+                color: #45413e;
+                font-weight: 400;
+                padding: 0 0 10px 0;
+              }
+              span {
+                font-size: 14px;
+                color: #bdc3c7;
+                font-weight: 700;
+              }
+            }
+            .info {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 60%;
+              margin: 0 auto;
+              @media (min-width: $md) {
+                width: 370px;
+              }
+              .increase {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 3px 0;
+                width: 106px;
+                border-radius: 19px;
+                background-color: rgba(30, 29, 34, 0);
+                border: 2px solid #e8e2d6;
+                button {
+                  background: transparent;
+                  border: 0;
+                }
+              }
+              .check-price {
+                display: none;
+                @media (min-width: $md) {
+                  display: block;
+                }
+                span {
+                  font-size: 30px;
+                  text-transform: uppercase;
+                  color: #45413e;
+                  font-weight: 800;
+                }
+              }
+              .close-btn {
+                a {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 24px;
+                  height: 24px;
+                  border: 2px solid #e8e2d6;
+                  border-radius: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

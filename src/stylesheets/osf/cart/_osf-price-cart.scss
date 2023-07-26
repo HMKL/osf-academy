@@ -1,0 +1,222 @@
+.osf-price-cart {
+  background: #f2edea;
+  padding: 3px 0 35px 0;
+  .inner {
+    p,
+    a,
+    span,
+    h1,
+    h2 {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .wrap {
+      width: calc(100% - 30px);
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 0 0 8px 8px;
+      @media (min-width: $lg) {
+        max-width: 1170px;
+      }
+      .content-price {
+        width: 83%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 70px 0 40px 0;
+        @media (min-width: $md) {
+          flex-direction: row;
+        }
+        .items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          @media (min-width: $md) {
+            flex-direction: row;
+          }
+          &:nth-child(1) {
+            padding: 0 0 10px 0;
+            @media (min-width: $md) {
+              padding: 0;
+            }
+          }
+          .add-coupon {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: $md) {
+              flex-direction: row;
+            }
+            .coupon-items {
+              div {
+                input {
+                  padding: 4px 21px 4px 10px;
+                  border-radius: 19px;
+                  background-color: rgba(30, 29, 34, 0);
+                  border: 2px solid #e8e2d6;
+                  position: relative;
+
+                  &::placeholder {
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #45413e;
+                    font-weight: 400;
+                    font-family: "Lato", sans-serif;
+                  }
+                  &:focus-visible {
+                    border-color: transparent;
+                  }
+                }
+              }
+              a {
+                display: block;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #84bc22;
+                font-weight: 400;
+                padding: 4px 35px 4px 35px;
+                border-radius: 19px;
+                border: 2px solid #84bc22;
+                text-decoration: none;
+                margin: 0;
+                text-align: center;
+                @media (min-width: $lg) {
+                  margin: 0 0 0 15px;
+                }
+              }
+            }
+          }
+          .update-cart {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: $md) {
+              flex-direction: row;
+            }
+            a {
+              border-radius: 19px;
+              border: 2px solid #84bc22;
+              text-decoration: none;
+              display: block;
+
+              text-align: center;
+              &:nth-child(1) {
+                color: #84bc22;
+                padding: 4px 6px 4px 6px;
+                @media (min-width: $lg) {
+                  padding: 4px 35px 4px 35px;
+                }
+              }
+              &:nth-child(2) {
+                margin: 0;
+                color: #fff;
+                background: #84bc22;
+
+                padding: 4px 4px 4px 2px;
+                @media (min-width: $md) {
+                  margin: 0 0 0 5px;
+                }
+                @media (min-width: $lg) {
+                  margin: 0 0 0 15px;
+                  padding: 4px 56px 4px 56px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .total-cart {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0 77px 0;
+        @media (min-width: $md) {
+          justify-content: center;
+          width: 83%;
+        }
+        @media (min-width: $lg) {
+          justify-content: flex-end;
+        }
+        .item-cart {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          @media (min-width: $md) {
+            width: 440px;
+          }
+          .subtotal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &:nth-child(2) {
+              padding: 15px 0 52px 0;
+            }
+            &:nth-child(3) {
+              align-items: center;
+            }
+            .items {
+              width: 100%;
+              @media (min-width: $md) {
+                width: calc(50% - 30px);
+              }
+
+              p {
+                font-size: 10px;
+                text-transform: uppercase;
+                color: #45413e;
+                font-weight: 400;
+                @media (min-width: $md) {
+                  font-size: 14px;
+                }
+              }
+              span {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #45413e;
+                font-weight: 800;
+              }
+              h2 {
+                font-size: 35px;
+                text-transform: uppercase;
+                color: #45413e;
+                font-weight: 800;
+                @media (min-width: $md) {
+                  font-size: 48px;
+                }
+              }
+              form {
+                .check {
+                  padding: 0;
+                  .form-check-input {
+                    width: 14px;
+                    height: 14px;
+                    border: 2px solid #e8e2d6;
+                    &:focus {
+                      box-shadow: none;
+                    }
+                    &:checked {
+                      background-image: none;
+                      position: relative;
+                      background: none;
+                      &:after {
+                        content: "";
+                        position: absolute;
+                        background: #84bc22;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

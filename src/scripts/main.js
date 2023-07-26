@@ -119,6 +119,9 @@
   get();
 
 
+  console.log(getHeaderText)
+
+
 
 
 
