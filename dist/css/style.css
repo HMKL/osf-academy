@@ -7947,7 +7947,7 @@ header .osf-header .modal .modal-dialog .modal-content form .inner-form .login {
   padding: 48px 0;
 }
 
-header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .btn-login a {
+header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .btn-login {
   width: 181px;
   height: 36px;
   border-radius: 19px;
@@ -7962,15 +7962,29 @@ header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
+  position: relative;
+}
+
+header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .btn-login a {
+  font-weight: 400;
+  text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 400;
-  text-decoration: none;
+  display: inline-block;
 }
 
 header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .btn-login a:hover {
   color: #000;
+}
+
+header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .btn-login a:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .btn-create {

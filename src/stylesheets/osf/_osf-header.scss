@@ -453,22 +453,33 @@ header {
               .login {
                 padding: 48px 0;
                 .btn-login {
+                  width: 181px;
+                  height: 36px;
+                  border-radius: 19px;
+                  background-color: #84bc22;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: 0 auto;
+                  position: relative;
                   a {
-                    width: 181px;
-                    height: 36px;
-                    border-radius: 19px;
-                    background-color: #84bc22;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 auto;
+                    font-weight: 400;
+                    text-decoration: none;
                     font-size: 14px;
                     text-transform: uppercase;
                     color: #fff;
-                    font-weight: 400;
-                    text-decoration: none;
+                    display: inline-block;
+
                     &:hover {
                       color: #000;
+                    }
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      height: 100%;
+                      width: 100%;
+                      top: 0;
+                      left: 0;
                     }
                   }
                 }
