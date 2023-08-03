@@ -9920,6 +9920,7 @@ header .osf-header .modal .modal-dialog .modal-content form .inner-form .login .
   width: 153px;
   border-radius: 19px;
   background-color: #84bc22;
+  display: inline-block;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
