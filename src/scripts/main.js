@@ -6,14 +6,13 @@
 
   const getHamburger = document.querySelector('.hamburger');
   const getHamburgerSpan = document.querySelector('.hamburger > span');
-  // const getNav = document.querySelector('.main-nav');
-  // const getMega = document.querySelector('.mega-menu');
-  // const getUl = document.querySelectorAll('.main-ul > li');
+
   const getHeaderText = document.querySelectorAll('.header-text');
   const getSubmenu = document.querySelectorAll('.sub-menu');
-  // const getA = document.querySelectorAll('.target');
   const getYear = document.querySelectorAll('.year > span');
-  // const getLinks = document.querySelector('.link');
+
+
+
 
   const getInputs = document.querySelectorAll('.check-radios > input');
   const getHideFilter = document.querySelector('.hide-filter');

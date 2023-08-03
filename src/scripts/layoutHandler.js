@@ -97,6 +97,54 @@ let layoutHandler;
 
 
 
+
+
+
+        let swiperThumbs = new Swiper(".swiper-thumbs", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: false,
+            watchSlidesProgress: true,
+            direction: 'horizontal',
+            breakpoints: {
+                768: {
+                    direction: 'vertical',
+                    slidesPerView: 4,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        let swiperPhoto = new Swiper(".swiper-photo", {
+            spaceBetween: 10,
+            direction: "horizontal",
+            zoom: true,
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            thumbs: {
+                swiper: swiperThumbs,
+            },
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         new PureCounter({
             selector: ".counter",
 

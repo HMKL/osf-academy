@@ -97,6 +97,54 @@ let layoutHandler;
 
 
 
+
+
+
+        let swiperThumbs = new Swiper(".swiper-thumbs", {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: false,
+            watchSlidesProgress: true,
+            direction: 'horizontal',
+            breakpoints: {
+                768: {
+                    direction: 'vertical',
+                    slidesPerView: 4,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        let swiperPhoto = new Swiper(".swiper-photo", {
+            spaceBetween: 10,
+            direction: "horizontal",
+            zoom: true,
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            thumbs: {
+                swiper: swiperThumbs,
+            },
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         new PureCounter({
             selector: ".counter",
 
@@ -137,14 +185,13 @@ let layoutHandler;
 
   const getHamburger = document.querySelector('.hamburger');
   const getHamburgerSpan = document.querySelector('.hamburger > span');
-  // const getNav = document.querySelector('.main-nav');
-  // const getMega = document.querySelector('.mega-menu');
-  // const getUl = document.querySelectorAll('.main-ul > li');
+
   const getHeaderText = document.querySelectorAll('.header-text');
   const getSubmenu = document.querySelectorAll('.sub-menu');
-  // const getA = document.querySelectorAll('.target');
   const getYear = document.querySelectorAll('.year > span');
-  // const getLinks = document.querySelector('.link');
+
+
+
 
   const getInputs = document.querySelectorAll('.check-radios > input');
   const getHideFilter = document.querySelector('.hide-filter');
