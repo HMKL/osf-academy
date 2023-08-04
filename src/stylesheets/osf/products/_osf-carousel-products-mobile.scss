@@ -1,0 +1,74 @@
+.products {
+  .osf-carousel-products-mobile {
+    background: #f1edea;
+    padding: 0 0 30px 0;
+    position: relative;
+    p,
+    a,
+    span {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .swiper {
+      width: calc(100% - 30px);
+
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          .inner-image {
+            position: relative;
+            img {
+              width: 100%;
+            }
+            .inner-text {
+              position: absolute;
+              bottom: 0;
+              height: 29%;
+              width: 100%;
+              padding: 0 20px;
+              text-align: center;
+              p {
+                font-size: 16px;
+                line-height: 18px;
+                color: #45413e;
+                font-weight: 400;
+                padding: 10px;
+              }
+              span {
+                font-size: 14px;
+                color: #011847;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .swiper-pagination-two {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 0 0;
+
+        span {
+          opacity: 0.5;
+          opacity: 0.5;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          background: #262a32;
+          &.swiper-pagination-bullet-active {
+            width: 15px;
+            height: 15px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 3px solid #000;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

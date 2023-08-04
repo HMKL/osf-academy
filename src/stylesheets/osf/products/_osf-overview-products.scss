@@ -1,0 +1,77 @@
+.osf-overview-products {
+  display: none;
+  background: #f1edea;
+  @media (min-width: $md) {
+    display: block;
+  }
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    @media (min-width: $lg) {
+      max-width: 1170px;
+    }
+    p,
+    a,
+    h2 {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .inner {
+      padding: 77px 0 0 0;
+      background: #fff;
+      nav {
+        .nav-tabs {
+          width: 100%;
+          margin: 0 auto;
+          justify-content: space-between;
+          flex-direction: row;
+          @media (min-width: $lg) {
+            max-width: 870px;
+          }
+          .nav-link {
+            width: 33.33%;
+            font-size: 24px;
+            color: #bdc3c7;
+            font-weight: 800;
+            font-family: "Lato";
+            text-align: center;
+            border-radius: 20px 20px 0px 0px;
+            &.active {
+              background: #262a33;
+              color: #fff;
+              border: none;
+              padding: 20px 0;
+            }
+            &:hover {
+              border-color: #bdc3c7;
+            }
+            @media (min-width: $md) {
+              font-size: 14px;
+            }
+            @media (min-width: $lg) {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          border-radius: 0px 0px 6px 6px;
+          .inner-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 70px;
+            .items {
+              width: calc(50% - 20px);
+            }
+          }
+          &.show {
+            background: #262a33;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
