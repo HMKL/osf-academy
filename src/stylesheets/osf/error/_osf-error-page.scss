@@ -1,0 +1,142 @@
+.osf-error-page {
+  background: #f2edea;
+  .wrap {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 0 0 45px 0;
+    @media (min-width: $md) {
+      max-width: 1170px;
+    }
+    p,
+    a,
+    span,
+    h1 {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .inner {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 65px 0;
+      @media (min-width: $md) {
+        flex-direction: row;
+      }
+      .items {
+        &:nth-child(1) {
+          width: 100%;
+          @media (min-width: $md) {
+            width: 47%;
+          }
+          @media (min-width: $lg) {
+            width: 37%;
+          }
+          .image {
+            position: relative;
+            width: 100%;
+
+            @media (min-width: $lg) {
+              max-width: 366px;
+              left: -60px;
+            }
+            img {
+              width: 100%;
+            }
+            .text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+              @media (min-width: $lg) {
+                left: 84%;
+                top: 44%;
+              }
+              h1 {
+                font-size: 90px;
+                color: #84bc22;
+                font-weight: 800;
+                @media (min-width: $lg) {
+                  font-size: 113px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          width: 100%;
+          @media (min-width: $md) {
+            width: 50%;
+          }
+          @media (min-width: $lg) {
+            width: 670px;
+          }
+          .info-error {
+            width: 100%;
+            // margin: 0 auto;
+            @media (min-width: $md) {
+              max-width: 567px;
+            }
+            span {
+              font-size: 24px;
+              color: #000;
+              font-weight: 800;
+              display: block;
+              padding: 0 0 8px 0;
+            }
+            p {
+              font-size: 16px;
+              line-height: 24px;
+              color: #555555;
+              font-weight: 400;
+              padding: 10px 0;
+            }
+            .back-home {
+              padding: 37px 0 50px 0;
+              @media (min-width: $lg) {
+                padding: 50px 0;
+              }
+              a {
+                font-size: 16px;
+                color: #84bc22;
+                font-weight: 400;
+                text-decoration: none;
+                display: inline-block;
+              }
+            }
+            .input {
+              position: relative;
+              .form-control {
+                border: 2px solid #e8e2d6;
+                border-radius: 19px;
+                padding: 0.275rem 0.75rem;
+                &:focus {
+                  box-shadow: none;
+                }
+                &::placeholder {
+                  font-size: 14px;
+                  text-transform: uppercase;
+                  color: #45413e;
+                  font-weight: 400;
+                  font-family: "Lato";
+                  padding: 0 0 0 10px;
+                }
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                background: url(../images/search-small.png);
+                width: 18px;
+                height: 18px;
+                top: 50%;
+                right: 18px;
+                transform: translate(0, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{% extends "partials/layout.html" %}
+
+{% block content %}
+
+
+
+<!-- OSF Header start-->
+{% include "partials/osf/osf-header.html" %}
+<!-- OSF Header end -->
+
+<!-- OSF Mobile Menu start-->
+{% include "partials/osf/osf-mobile-menu.html" %}
+<!-- OSF Mobile Menu end -->
+
+<main class="error">
+
+
+
+    <!-- OSF Title Error start -->
+    {% include "partials/osf/error/osf-title-error.html" %}
+    <!-- OSF Title Error end -->
+
+
+    <!-- OSF Title Error start -->
+    {% include "partials/osf/error/osf-error-page.html" %}
+    <!-- OSF Title Error end -->
+
+
+
+
+</main>
+
+
+
+
+<!-- OSF Footer start -->
+{% include "partials/osf/osf-footer.html" %}
+<!-- OSF Footer end -->
+
+
+<!-- OSF Footer start -->
+{% include "partials/osf/osf-footer-mobile.html" %}
+<!-- OSF Footer end -->
+
+
+
+
+
+{% endblock %}
